@@ -23,7 +23,7 @@ include('./includes/db.php');
                 echo "Invalid Passwords";
                 exit;
              }
-    
+    //For check if user already registed.
     $query = "SELECT * FROM users WHERE email='$email'";
     $result = $conn->query($query);
     $count = $result->num_rows;
