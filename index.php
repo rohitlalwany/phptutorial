@@ -21,7 +21,6 @@ include('./includes/db.php');
              }
              if (($_POST['password']=='') OR ($_POST['re_password']=='')){
                 echo "Invalid Passwords";
-                exit;
              }
     
     $query = "SELECT * FROM users WHERE email='$email'";
